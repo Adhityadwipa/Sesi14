@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery1</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3>Judul</h3>
+    <p></p>
+    <div id="isikontenid">isi dari konten ID</div>
+    <div class="isikontencls">isi konten CLASS</div>
+    <br>
+    <div class="nama">Nama Lengkap</div>
+    <div id="nim">NIM</div>
+  
+    <th>Hobi</th>
+   
+    <ul>
+        <li id="gambar">menggambar</li>
+        <li id="game">main game</li>
+        <li id="tidur">tidur</li>
+    </ul>
+    
+
+    <script>
+        //secara jquery
+        //$(document).ready(function(){
+
+        //});
+
+            //Atau
+
+        $(function(){
+            $("#isikontenid").html("Konten dengan jQuery pada elemen ID");
+            $(".isikontencls").html("Konten dengan jQuery pada elemen CLASS")
+            //jika ingin menggantikan isi dari h3
+            $("h3").html("Latihan jQuery1");
+            $("p").html("Isi dari Paragraf");
+            $(".nama").html("Nama Lengkap : Made Adhitya Dwipayana");
+            $("#nim").html("NIM : 2201010366");
+            $("th").html("<b>HOBI</b>");
+            $("#gambar").html("Menggambar 🎨");
+            $("#game").html("Main Game 🎮");
+            $("#tidur").html("Turuuuuu~ 😴");
+
+
+        });
+
+        //menggunakan javascrip native
+        //document.getElementById("isikontenid").innerHTML = "konten pengganti <b>konten ID </b>"
+        //document.getElementsByClassName("isikontencls")
+    </script>
+</body>
+</html>
